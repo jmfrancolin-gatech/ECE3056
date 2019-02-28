@@ -1,0 +1,34 @@
+v 4
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "pipe_reg1.vhd" "7a61cf1390aa9e5af68f07e4ce6d333ff0674a33" "20181001020826.095":
+  entity pipe_reg1 at 5( 40) + 0 on 17;
+  architecture behavioral of pipe_reg1 at 18( 380) + 0 on 18;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "pipe_reg2.vhd" "e368c1504fe478433aa53eb0e1d345859ed8b4cb" "20181001020826.360":
+  entity pipe_reg2 at 5( 40) + 0 on 23;
+  architecture behavioral of pipe_reg2 at 30( 1102) + 0 on 24;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "pipe_reg3.vhd" "bb7badfd136925b8c39781fe4fd4474fcdf9cbeb" "20181001020826.698":
+  entity pipe_reg3 at 5( 42) + 0 on 27;
+  architecture behavioral of pipe_reg3 at 22( 730) + 0 on 28;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "pipe_reg4.vhd" "3f446942df5c111ac1711f761a94aeb3739decd0" "20181001020826.844":
+  entity pipe_reg4 at 5( 41) + 0 on 31;
+  architecture behavioral of pipe_reg4 at 20( 553) + 0 on 32;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "ps_clock.vhd" "8d06e4aeee5a7086501c108ee46f4b6fe1cae58d" "20181001020825.988":
+  entity my_clock at 1( 0) + 0 on 13;
+  architecture behavior of my_clock at 10( 197) + 0 on 14;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "ps_control.vhd" "ab854d17b488062089ba5955f7d4a506e1042d9e" "20181001020826.138":
+  entity control at 7( 97) + 0 on 19;
+  architecture behavioral of control at 22( 573) + 0 on 20;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "ps_decode.vhd" "a3f26ec6074d657a1d73e917cb3e39ac199df242" "20181001020826.205":
+  entity decode at 5( 35) + 0 on 21;
+  architecture behavioral of decode at 30( 645) + 0 on 22;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "ps_execute.vhd" "566741f7be7ef723f6990095e0144ebeb4b6769a" "20181001020826.496":
+  entity execute at 7( 135) + 0 on 25;
+  architecture behavioral of execute at 36( 1089) + 0 on 26;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "ps_fetch.vhd" "dd1e75353612bed785ce28f0cbbc9f63aca94463" "20181001020826.013":
+  entity fetch at 5( 47) + 0 on 15;
+  architecture behavioral of fetch at 21( 423) + 0 on 16;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "ps_memory.vhd" "b0d265147cafe1aad400cbffc94b11223af9ec3c" "20181001020826.778":
+  entity memory at 5( 36) + 0 on 29;
+  architecture behavioral of memory at 26( 379) + 0 on 30;
+file "/Users/jm/Desktop/ECE3056/MIPS_pipe_line/" "spim_pipe.vhd" "3403d6cb0ea802b7a25732559076e7aa983854eb" "20181001020825.643":
+  entity spim_pipe at 5( 34) + 0 on 11;
+  architecture structural of spim_pipe at 22( 682) + 0 on 12;

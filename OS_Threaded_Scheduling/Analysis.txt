@@ -1,0 +1,48 @@
+ECE 3056 Fall 2018
+Lab Assignment 4
+
+Name: Joao Matheus Nascimento Francolin
+GT Username: jfrancolin3
+
+Problem 1B
+----------
+
+./os-sim 1 -> Total execution time: 67.6 s
+./os-sim 2 -> Total execution time: 35.8 s
+./os-sim 4 -> Total execution time: 33.4 s
+
+The relationship between the number of CPUs and total execution time is not linear, but instead, it has a logarithmic trend (it has a linear behavior for low values, but it quickly plateaus). This happens because the simulator rarely runs more than 2 threads at a time. This has to do with the nature of our problem. If more multithreaded programs running at a time, the simulator would take better advantage of the extra cores.
+
+Problem 2B
+----------
+
+B.1:
+    The Longest Remaining Time First Scheduler schedules the longest processes to be computed by the CPU first. The problem is that estimating which process will take the longest is by definition not exact, and it also takes overhead computation time to perform such an estimation.
+
+B.2:
+    ./os-sim 1      ->  Total time spent in READY state: 389.9 s
+    ./os-sim 1 -l   ->  Total time spent in READY state: 283.1 s
+
+    The LRTF scheduler algorithm has a lower total waiting time when comparing the FIFO algorithm when both are rubbing with one CPU. This is possibly due to the fact that the LRTF algorithm will yield in a lower number of instruction stalls than FIFO.
+
+Problem 3B
+----------
+
+./os-sim 1 -r 8 ->  # of Context Switches: 136
+                    Total execution time: 67.6 s
+                    Total time spent in READY state: 325.4 s
+
+./os-sim 1 -r 6 ->  # of Context Switches: 161
+                    Total execution time: 67.7 s
+                    Total time spent in READY state: 310.8 s
+
+./os-sim 1 -r 4 ->  # of Context Switches: 202
+                    Total execution time: 67.6 s
+                    Total time spent in READY state: 299.1 s
+
+./os-sim 1 -r 2 ->  # of Context Switches: 362
+                    Total execution time: 67.5 s
+                    Total time spent in READY state: 285.2 s
+
+
+From this data we can observe 3 important trends when decreasing the timeslice: the waiting time decreases in a linear fashion, the execution time remains approximately the same, but the number of context switches increases exponentially. Hence, decreasing the timeslice on the Round-Robin Scheduling algorithm may not be the best practice on a real system since this will destroy the caches temporal locality when switching threads, yielding on higher percentages of cache misses, and therefore in a slower system overall.
